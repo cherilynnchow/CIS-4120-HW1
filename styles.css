@@ -204,6 +204,7 @@ body {
 .hourly-forecast p {
     font-size: 25px;
     line-height: 0px;
+    margin-top: 32px;
 }
 
 .other-widgets {
