@@ -1,0 +1,432 @@
+<html>
+
+<head>
+    <link href="/styles.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="location">
+        <p>My Location</p>
+        <h3>Philadelphia</h3>
+    </div>
+
+    <div class="today-forecast-component">
+        <div class="today-forecast-left-side">
+            <h3>Today</h3>
+            <img class="today-image" width=50px src="/assets/Sunny.png" />
+            <p>25&deg;</p>
+        </div>
+
+        <div class="today-forecast-right-side">
+            <div id="feels-like">
+                <h3>Feels like: 24&deg;</h3>
+            </div>
+            <div id="wind">
+                <h3>Wind: 1mph</h3>
+            </div>
+            <div id="precipitation">
+                <h3>Precipitation: 0%</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="daily-forecast">
+        <a href="index.html">
+            <div>
+                <h3>Sunday</h3>
+                <img width=40px src="/assets/Snowy.png" />
+                <p>20&deg;</p>
+            </div>
+        </a>
+        <a href="/monday.html">
+            <div>
+                <h3>Monday</h3>
+                <img width=40px src="/assets/Snowy.png" />
+                <p>25&deg;</p>
+            </div>
+        </a>
+        <a href="tuesday.html">
+            <div>
+                <h3>Tuesday</h3>
+                <img width=40px src="/assets/Rainy.png" />
+                <p>25&deg;</p>
+            </div>
+        </a>
+        <a href="wednesday.html">
+            <div>
+                <h3>Wednesday</h3>
+                <img width=40px src="/assets/PartlyCloudy.png" />
+                <p>25&deg;</p>
+            </div>
+        </a>
+        <a href="thursday.html">
+            <div>
+                <h3>Thursday</h3>
+                <img width=40px src="/assets/PartlyCloudy.png" />
+                <p>25&deg;</p>
+            </div>
+        </a>
+        <a href="friday.html"></a>
+        <div>
+            <h3>Friday</h3>
+            <img width=40px src="/assets/Sunny.png" />
+            <p>25&deg;</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="hourly-forecast-component">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Temperature')" id="defaultOpen">Temperature</button>
+            <button class="tablinks" onclick="openCity(event, 'Wind')">Wind (mph)</button>
+            <button class="tablinks" onclick="openCity(event, 'Precipitation')">Precipitation</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Temperature" class="tabcontent">
+            <div class="hourly-forecast">
+                <div>
+                    <h3>12:00am</h3>
+                    <p>20&deg;</p>
+                </div>
+                <div>
+                    <h3>1:00am</h3>
+                    <p>23&deg;</p>
+                </div>
+                <div>
+                    <h3>2:00am</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>3:00am</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>4:00am</h3>
+                    <p>34&deg;</p>
+                </div>
+                <div>
+                    <h3>5:00am</h3>
+                    <p>32&deg;</p>
+                </div>
+                <div>
+                    <h3>6:00am</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>7:00am</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>8:00am</h3>
+                    <p>21&deg;</p>
+                </div>
+                <div>
+                    <h3>9:00am</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>10:00am</h3>
+                    <p>32&deg;</p>
+                </div>
+                <div>
+                    <h3>11:00am</h3>
+                    <p>31&deg;</p>
+                </div>
+                <div>
+                    <h3>12:00pm</h3>
+                    <p>29&deg;</p>
+                </div>
+                <div>
+                    <h3>1:00pm</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>2:00pm</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>3:00pm</h3>
+                    <p>30&deg;</p>
+                </div>
+                <div>
+                    <h3>4:00pm</h3>
+                    <p>29&deg;</p>
+                </div>
+                <div>
+                    <h3>5:00pm</h3>
+                    <p>29&deg;</p>
+                </div>
+                <div>
+                    <h3>6:00pm</h3>
+                    <p>28&deg;</p>
+                </div>
+                <div>
+                    <h3>7:00pm</h3>
+                    <p>28&deg;</p>
+                </div>
+                <div>
+                    <h3>8:00pm</h3>
+                    <p>27&deg;</p>
+                </div>
+                <div>
+                    <h3>9:00pm</h3>
+                    <p>24&deg;</p>
+                </div>
+                <div>
+                    <h3>10:00pm</h3>
+                    <p>22&deg;</p>
+                </div>
+                <div>
+                    <h3>11:00pm</h3>
+                    <p>20&deg;</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Wind" class="tabcontent">
+            <div class="hourly-forecast">
+                <div>
+                    <h3>12:00am</h3>
+                    <p>3</p>
+                </div>
+                <div>
+                    <h3>1:00am</h3>
+                    <p>5</p>
+                </div>
+                <div>
+                    <h3>2:00am</h3>
+                    <p>5</p>
+                </div>
+                <div>
+                    <h3>3:00am</h3>
+                    <p>5</p>
+                </div>
+                <div>
+                    <h3>4:00am</h3>
+                    <p>5</p>
+                </div>
+                <div>
+                    <h3>5:00am</h3>
+                    <p>8</p>
+                </div>
+                <div>
+                    <h3>6:00am</h3>
+                    <p>9</p>
+                </div>
+                <div>
+                    <h3>7:00am</h3>
+                    <p>11</p>
+                </div>
+                <div>
+                    <h3>8:00am</h3>
+                    <p>11</p>
+                </div>
+                <div>
+                    <h3>9:00am</h3>
+                    <p>13</p>
+                </div>
+                <div>
+                    <h3>10:00am</h3>
+                    <p>20</p>
+                </div>
+                <div>
+                    <h3>11:00am</h3>
+                    <p>23</p>
+                </div>
+                <div>
+                    <h3>12:00pm</h3>
+                    <p>23</p>
+                </div>
+                <div>
+                    <h3>1:00pm</h3>
+                    <p>23</p>
+                </div>
+                <div>
+                    <h3>2:00pm</h3>
+                    <p>24</p>
+                </div>
+                <div>
+                    <h3>3:00pm</h3>
+                    <p>25</p>
+                </div>
+                <div>
+                    <h3>4:00pm</h3>
+                    <p>25</p>
+                </div>
+                <div>
+                    <h3>5:00pm</h3>
+                    <p>24</p>
+                </div>
+                <div>
+                    <h3>6:00pm</h3>
+                    <p>20</p>
+                </div>
+                <div>
+                    <h3>7:00pm</h3>
+                    <p>20</p>
+                </div>
+                <div>
+                    <h3>8:00pm</h3>
+                    <p>19</p>
+                </div>
+                <div>
+                    <h3>9:00pm</h3>
+                    <p>18</p>
+                </div>
+                <div>
+                    <h3>10:00pm</h3>
+                    <p>19</p>
+                </div>
+                <div>
+                    <h3>11:00pm</h3>
+                    <p>19</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Precipitation" class="tabcontent">
+            <div class="hourly-forecast">
+                <div>
+                    <h3>12:00am</h3>
+                    <p>10%</p>
+                </div>
+                <div>
+                    <h3>1:00am</h3>
+                    <p>20%</p>
+                </div>
+                <div>
+                    <h3>2:00am</h3>
+                    <p>28%</p>
+                </div>
+                <div>
+                    <h3>3:00am</h3>
+                    <p>50%</p>
+                </div>
+                <div>
+                    <h3>4:00am</h3>
+                    <p>87%</p>
+                </div>
+                <div>
+                    <h3>5:00am</h3>
+                    <p>97%</p>
+                </div>
+                <div>
+                    <h3>6:00am</h3>
+                    <p>100%</p>
+                </div>
+                <div>
+                    <h3>7:00am</h3>
+                    <p>100%</p>
+                </div>
+                <div>
+                    <h3>8:00am</h3>
+                    <p>100%</p>
+                </div>
+                <div>
+                    <h3>9:00am</h3>
+                    <p>100%</p>
+                </div>
+                <div>
+                    <h3>10:00am</h3>
+                    <p>86%</p>
+                </div>
+                <div>
+                    <h3>11:00am</h3>
+                    <p>77%</p>
+                </div>
+                <div>
+                    <h3>12:00pm</h3>
+                    <p>75%</p>
+                </div>
+                <div>
+                    <h3>1:00pm</h3>
+                    <p>75%</p>
+                </div>
+                <div>
+                    <h3>2:00pm</h3>
+                    <p>74%</p>
+                </div>
+                <div>
+                    <h3>3:00pm</h3>
+                    <p>73%</p>
+                </div>
+                <div>
+                    <h3>4:00pm</h3>
+                    <p>70%</p>
+                </div>
+                <div>
+                    <h3>5:00pm</h3>
+                    <p>70%</p>
+                </div>
+                <div>
+                    <h3>6:00pm</h3>
+                    <p>50%</p>
+                </div>
+                <div>
+                    <h3>7:00pm</h3>
+                    <p>49%</p>
+                </div>
+                <div>
+                    <h3>8:00pm</h3>
+                    <p>48%</p>
+                </div>
+                <div>
+                    <h3>9:00pm</h3>
+                    <p>30%</p>
+                </div>
+                <div>
+                    <h3>10:00pm</h3>
+                    <p>40%</p>
+                </div>
+                <div>
+                    <h3>11:00pm</h3>
+                    <p>49%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-widgets">
+        <div id="humidity">
+            <h3>Humidity</h3>
+            <p>50%</p>
+        </div>
+        <div id="air-quality">
+            <h3>Air Quality</h3>
+            <p>89</p>
+        </div>
+        <div id="uv-index">
+            <h3>UV Index</h3>
+            <p>2 of 11</p>
+        </div>
+        <div id="sunset">
+            <h3>Sunset</h3>
+            <p>6:48pm</p>
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
